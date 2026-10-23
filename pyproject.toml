@@ -1,0 +1,37 @@
+[project]
+name = "astromancers-spline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Quantum-Quill-314", email = "dmd.dhawal@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "efficient-kan",
+    "ipykernel>=7.4.0",
+    "lightgbm>=4.7.0",
+    "numpy>=2.5.4",
+    "pandas>=3.0.6",
+    "pyarrow>=26.0.0",
+    "pymatgen>=2026.9.24",
+    "pysr>=2.7.2",
+    "requests>=2.34.2",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+    "sympy>=1.14.0",
+    "tensorboard>=2.21.0",
+    "torch>=2.14.1",
+    "torchvision>=0.29.1",
+    "xgboost>=3.4.1",
+]
+
+[project.scripts]
+astromancers-spline = "astromancers_spline:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.uv.sources]
+efficient-kan = { git = "https://github.com/Blealtan/efficient-kan.git" }
